@@ -19,7 +19,9 @@ function getNumberInfo() {
 /*
 
     Function to get Sum of Multiples of 3 or 5
-    below a certain number
+    below a certain number.
+
+    For example sum of multiples of 3 or 5 below 10 is 23.
 
 */
 function multiplesOf3and5(number) {
