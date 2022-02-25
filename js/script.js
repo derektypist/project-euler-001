@@ -9,7 +9,7 @@ function getNumberInfo() {
         txt += `Invalid Input.  Please enter a whole number between 0 and 100000.`;
     } else {
         txt += `You have entered the number ${num}. <p>`;
-        txt += `Sum of multiples of 3 or 5 below ${num} is ${multiplesOf3and5(num)}`;
+        txt += `Sum of multiples of 3 or 5 below ${num} is ${multiplesOf3and5(num)}.`;
     }
 
     // Display Information in the Browser
