@@ -9,8 +9,7 @@ function getNumberInfo() {
         txt += `Invalid Input.  Please enter a whole number between 0 and 100000.`;
     } else {
         txt += `You have entered the number ${num}. <p>`;
-        txt += `Sum of multiples of 3 or 5 below ${num} is `;
-        txt += `${multiplesOf3and5(num)}.`;
+        txt += `Sum of multiples of 3 or 5 below ${num} is ${multiplesOf3and5(num)}`;
     }
 
     // Display Information in the Browser
@@ -18,8 +17,8 @@ function getNumberInfo() {
 }
 
 // Function to get the sum of multiples of 3 or 5 below a certain number
-function multiplesOf3and5(number) {
-    return Array(number).fill(0).map((e,i) => i).filter((i) => i%3==0 || i%5==0).reduce((p,c) => p+c, 0);
+function multiplesOf3and5(num) {
+    return Array(num).fill(0).map((e,i) => i).filter((i) => i%3==0 || i%5==0).reduce((p,c) => p+c, 0);
 }
 
 // Function to clear information
