@@ -15,3 +15,8 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+// Function to get the sum of multiples of 3 or 5 below a certain number
+function multiplesOf3and5(number) {
+    return Array(number).fill(0).map((e,i) => i).filter((i) => i%3==0 || i%5==0).reduce((p,c) => p+c, 0);
+}
