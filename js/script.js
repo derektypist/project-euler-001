@@ -3,13 +3,13 @@ function getNumberInfo() {
     // Set Up Variable
     let txt="";
     // Get the Value of the Input Field
-    let num = document.getElementById("mynumber").value;
+    let number = document.getElementById("mynumber").value;
     // Check if number is valid
-    if (isNaN(num) || num.toString().length == 0 || num<0 || num>100000 || !Number.isInteger(Number(num))) {
+    if (isNaN(number) || number.toString().length == 0 || number<0 || num>100000 || !Number.isInteger(Number(number))) {
         txt += `Invalid Input.  Please enter a whole number between 0 and 100000.`;
     } else {
-        txt += `You have entered the number ${num}. <p>`;
-        txt += `Sum of multiples of 3 or 5 below ${num} is ${multiplesOf3and5(num)}`;
+        txt += `You have entered the number ${number}. <p>`;
+        txt += `Sum of multiples of 3 or 5 below ${number} is ${multiplesOf3and5(number)}.`;
     }
 
     // Display Information in the Browser
