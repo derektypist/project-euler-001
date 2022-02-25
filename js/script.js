@@ -20,3 +20,9 @@ function getNumberInfo() {
 function multiplesOf3and5(number) {
     return Array(number).fill(0).map((e,i) => i).filter((i) => i%3==0 || i%5==0).reduce((p,c) => p+c, 0);
 }
+
+// Function to clear information
+function clearInfo() {
+    let txt="";
+    document.getElementById("numinfo").innerHTML = txt;
+}
