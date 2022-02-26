@@ -25,7 +25,12 @@ function getNumberInfo() {
 
 */
 function multiplesOf3and5(number) {
-    return Array(number).fill(0).map((e,i) => i).filter((i) => i%3 == 0 || i%5 ==0).reduce((p,c) => p+c,0);
+    if (number < 3) return 0;
+    let total = 0;
+    for (let i=3;i<number;i++) {
+        if (i%3==0 || i%5==0) total += i;
+    }
+    return total;
 }
 
 // Function to clear information
